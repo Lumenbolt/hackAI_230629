@@ -4,11 +4,12 @@ from agents.terminal_interface import TerminalInterface
 from messages.temperature_data import TemperatureData
 
 def main():
+    apikey = input("Enter your OpenWeather API key (mandatory): ")
     location = input("Enter the city to fetch weather data (blank for delhi): ") or 'delhi'
     minimum_temp = float(input("Enter the minimum temperature threshold (in Celsius): "))
     maximum_temp = float(input("Enter the maximum temperature threshold (in Celsius): "))
 
-    temperature_alert = TemperatureAlert('b5ee09875753cc27f23fa008321ba336')
+    temperature_alert = TemperatureAlert(apikey)
     terminal_interface = TerminalInterface()
 
     temperature_alert_agent = Agent(name="temp", seed="temp")
