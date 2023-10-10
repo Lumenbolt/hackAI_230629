@@ -1,0 +1,9 @@
+[tool.poetry]
+name = "temperature-alert-agent"
+version = "0.1.0"
+description = "A Python program that uses the uAgents library to connect to a weather API, fetch the real-time temperature for a specified location, and send an alert to the user when the temperature goes below or above a specified threshold."
+authors = ["Your Name"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+uagents = "^1.0.0"
