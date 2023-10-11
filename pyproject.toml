@@ -2,7 +2,7 @@
 name = "temperature-alert-agent"
 version = "0.1.0"
 description = "A Python program that uses the uAgents library to connect to a weather API, fetch the real-time temperature for a specified location, and send an alert to the user when the temperature goes below or above a specified threshold."
-authors = ["Your Name"]
+authors = "Hack-230629"    
 license = "MIT"
 
 [tool.poetry.dependencies]
