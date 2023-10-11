@@ -7,7 +7,7 @@ from messages.temperature_data import TemperatureData
 def main():
     #ask the user for inputs : API Key, location, minimum temperature, and maximum temperature thresholds
     apikey = input("Enter your OpenWeather API key (mandatory): ")
-    location = input("Enter the city to fetch weather data (blank for delhi): ") or 'delhi'
+    location = input("Enter the city to fetch weather data (blank for Delhi): ") or 'Delhi'
     minimum_temp = float(input("Enter the minimum temperature threshold (in Celsius): "))
     maximum_temp = float(input("Enter the maximum temperature threshold (in Celsius): "))
 
