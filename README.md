@@ -43,6 +43,18 @@ python temperature_alert_agent.py
 "
 The program will start monitoring the temperature for the specified location. If the temperature falls below or rises above the specified thresholds, the program will send alerts to keep you informed.
 
+## How It Works
+1. The user provides their OpenWeather API key, location, minimum temperature threshold, and maximum temperature threshold as inputs.
+
+2. The program sets up the TemperatureAlert agent and initializes a TerminalInterface for user interaction.
+
+3. Different agents are created for distinct tasks: TemperatureAlert for data retrieval, notifications for minimum and maximum thresholds, and a CLI (Command Line Interface) agent for user interaction.
+
+4. A periodic function fetches weather data for the specified location and checks if the temperature falls outside the user-defined thresholds.
+
+5. If the temperature crosses the set thresholds, the program sends alert notifications to the user, providing information about the temperature condition.
+
+6. The program uses ANSI escape codes to display colored text in the terminal, making it easy for users to distinguish between normal messages and alerts.
 ## Special Considerations
 
 1. The program uses ANSI escape codes for colored text in the terminal (red for alerts and green for normal messages). Ensure that your terminal supports these escape codes for accurate display.
